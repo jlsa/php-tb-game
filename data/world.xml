@@ -1,66 +1,198 @@
 <world>
     <room>
+        <id>0</id>
         <name>The pub</name>
-        <desc>The pub is full of drunken revellers - the war against the orks has been won, and the fighting heroes have returned home</desc>
-        <north>1</north>
-        <south>2</south>
-        <west>3</west>
-        <east>4</east>
+        <description>
+            <default>The pub is full of drunken revellers - the war against the orks has been won, and the fighting heroes have returned home</default>
+            <detailed/>
+        </description>
+        <exit>
+            <direction>north</direction>
+            <roomId>1</roomId>
+            <exitType>door</exitType>
+        </exit>
+        <exit>
+            <direction>south</direction>
+            <roomId>2</roomId>
+            <exitType>door</exitType>
+        </exit>
+        <exit>
+            <direction>west</direction>
+            <roomId>3</roomId>
+            <exitType>gate</exitType>
+        </exit>
+        <exit>
+            <direction>east</direction>
+            <roomId>4</roomId>
+            <exitType>gate</exitType>
+        </exit>
     </room>
     <room>
+        <id>1</id>
         <name>Your house</name>
-        <desc>Your house overlooks the Lamb and Lion pub, which makes it easy to stumble home when drunk.</desc>
-        <north>-</north>
-        <south>0</south>
-        <west>6</west>
-        <east>7</east>
+        <description>
+            <default>Your house overlooks the Lamb and Lion pub, which makes it easy to stumble home when drunk.</default>
+            <detailed/>
+        </description>
+        <exit>
+            <direction>south</direction>
+            <roomId>0</roomId>
+            <exitType>door</exitType>
+        </exit>
+        <exit>
+            <direction>west</direction>
+            <roomId>6</roomId>
+            <exitType>door</exitType>
+        </exit>
+        <exit>
+            <direction>east</direction>
+            <roomId>7</roomId>
+            <exitType>door</exitType>
+        </exit>
     </room>
     <room>
+        <id>2</id>
         <name>A shady alley</name>
-        <desc>The alley is dark with a peculiar mist making it hard to see the other side. You can hear someone whistling poorly.</desc>
-        <north>0</north>
-        <south>5</south>
-        <west>-</west>
-        <east>-</east>
+        <description>
+            <default>The alley is dark with a peculiar mist making it hard to see the other side. You can hear someone whistling poorly.</default>
+            <detailed/>
+        </description>
+        <exit>
+            <direction>north</direction>
+            <roomId>0</roomId>
+            <exitType>door</exitType>
+        </exit>
+        <exit>
+            <direction>south</direction>
+            <roomId>5</roomId>
+            <exitType>door</exitType>
+        </exit>
     </room>
     <room>
+        <id>3</id>
         <name>Castle</name>
-        <desc>The castle was built hundreds of years ago when the city was much richer than it is now.</desc>
-        <north>6</north>
-        <south>-</south>
-        <west>-</west>
-        <east>0</east>
+        <description>
+            <default>The castle was built hundreds of years ago when the city was much richer than it is now.</default>
+            <detailed/>
+        </description>
+        <exit>
+            <direction>north</direction>
+            <roomId>6</roomId>
+            <exitType>gate</exitType>
+        </exit>
+        <exit>
+            <direction>east</direction>
+            <roomId>0</roomId>
+            <exitType>gate</exitType>
+        </exit>
     </room>
     <room>
+        <id>4</id>
         <name>City walls</name>
-        <desc>The city walls are eight metres high and two thick, and have kept invaders out for centuries.</desc>
-        <north>7</north>
-        <south>-</south>
-        <west>0</west>
-        <east>-</east>
+        <description>
+            <default>The city walls are eight metres high and two thick, and have kept invaders out for centuries.</default>
+            <detailed/>
+        </description>
+        <exit>
+            <direction>north</direction>
+            <roomId>7</roomId>
+            <exitType>gate</exitType>
+        </exit>
+        <exit>
+            <direction>west</direction>
+            <roomId>0</roomId>
+            <exitType>gate</exitType>
+        </exit>
     </room>
     <room>
+        <id>5</id>
         <name>Misty alley</name>
-        <desc>A dangerous-looking man stands before you holding a small dagger. "Come any closer and I kill yer!"</desc>
-        <north>2</north>
-        <south>-</south>
-        <west>-</west>
-        <east>-</east>
+        <description>
+            <default>A dangerous-looking man stands before you holding a small dagger. "Come any closer and I kill yer!"</default>
+            <detailed/>
+        </description>
+        <exit>
+            <direction>north</direction>
+            <roomId>2</roomId>
+            <exitType>door</exitType>
+            <exitType>door</exitType>
+        </exit>
     </room>
     <room>
+        <id>6</id>
         <name>Stables</name>
-        <desc>The stables are full of sleeping horses, but at least it is nice and warm in here.</desc>
-        <north>-</north>
-        <south>3</south>
-        <west>-</west>
-        <east>1</east>
+        <description>
+            <default>The stables are full of sleeping horses, but at least it is nice and warm in here.</default>
+            <detailed/>
+        </description>
+        <exit>
+            <direction>south</direction>
+            <roomId>3</roomId>
+            <exitType>gate</exitType>
+        </exit>
+        <exit>
+            <direction>east</direction>
+            <roomId>1</roomId>
+            <exitType>door</exitType>
+        </exit>
     </room>
     <room>
+        <id>7</id>
         <name>Gardens</name>
-        <desc>The gardens are peaceful and surprisingly of flowers for this time of year.</desc>
-        <north>-</north>
-        <south>4</south>
-        <west>1</west>
-        <east>-</east>
+        <description>
+            <default>The gardens are peaceful and surprisingly of flowers for this time of year.</default>
+            <detailed/>
+        </description>
+        <exit>
+            <direction>south</direction>
+            <roomId>4</roomId>
+            <exitType>gate</exitType>
+        </exit>
+        <exit>
+            <direction>west</direction>
+            <roomId>1</roomId>
+            <exitType>door</exitType>
+        </exit>
+        <exit>
+            <direction>north</direction>
+            <roomId>8</roomId>
+            <exitType>door</exitType>
+        </exit>
     </room>
+    <room>
+        <id>8</id>
+        <name>Hallway</name>
+        <description>
+            <default>A once clinical and clean white environment. But now there is blood everywhere.</default>
+            <detailed>
+                A long hallway leading up to a door, but this once pristine white and clinically clean environment is not safe anymore. Blood and gore everywhere you can look.
+            </detailed>
+        </description>
+        <exit>
+            <direction>south</direction>
+            <roomId>7</roomId>
+            <exitType>door</exitType>
+        </exit>
+        <exit>
+            <direction>west</direction>
+            <roomId>9</roomId>
+            <exitType>door</exitType>
+        </exit>
+    </room>
+    <room>
+        <id>9</id>
+        <name>Laboratory</name>
+        <description>
+            <default>A very clinical and clean white environment. No blood here. Strange.</default>
+            <detailed>
+                You can smell the detergent that has been used to clean this laboratory. It has never been this clean before.
+            </detailed>
+        </description>
+        <exit>
+            <direction>east</direction>
+            <roomId>8</roomId>
+            <exitType>door</exitType>
+        </exit>
+    </room>
+
 </world>
