@@ -9,9 +9,11 @@ class App
 {
     private World $world;
 
+    /**
+     * @throws \Exception
+     */
     public function __construct()
     {
-//        $this->world = WorldBuilder::buildFromXml(filename: './data/world.xml');
         $this->world = WorldBuilder::buildFromJson(filename: './data/world.json');
     }
 

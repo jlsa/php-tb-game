@@ -78,26 +78,7 @@
         {
           "direction": "north",
           "room_id": 6,
-          "exit_type": "gate",
-          "lock": {
-            "locked": true,
-            "unlock_conditions": [
-              {
-                "type": "seen",
-                "value": {
-                  "room": 7
-                },
-                "quantity": 1
-              },
-              {
-                "type": "consumed",
-                "value": {
-                  "drink": "beer"
-                },
-                "quantity": 10
-              }
-            ]
-          }
+          "exit_type": "gate"
         },
         {
           "direction": "east",
@@ -121,17 +102,6 @@
           "direction": "west",
           "room_id": 0,
           "exit_type": "gate"
-        },
-        {
-          "direction": "up",
-          "room_id": 4,
-          "exit_type": "other",
-          "notifications": [
-            {
-              "variant": "error",
-              "message": "Unable to climb up. It's way to high."
-            }
-          ]
         }
       ]
     },
