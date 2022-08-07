@@ -16,14 +16,15 @@ enum DirectionEnum: string
      */
     public function getOpposite(): DirectionEnum
     {
-        return match($this->value) {
+        $opposites = [
             DirectionEnum::Down->value => DirectionEnum::Up,
             DirectionEnum::Up->value => DirectionEnum::Down,
             DirectionEnum::North->value => DirectionEnum::South,
             DirectionEnum::East->value => DirectionEnum::West,
             DirectionEnum::South->value => DirectionEnum::North,
             DirectionEnum::West->value => DirectionEnum::East,
-            default => throw new \Exception('Unexpected match value'),
-        };
+        ];
+
+        return $opposites[$this->value];
     }
 }

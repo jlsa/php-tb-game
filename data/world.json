@@ -1,0 +1,224 @@
+{
+  "rooms": [
+    {
+      "id": 0,
+      "name": "The Pub",
+      "description": "The pub is full of drunken revellers - the war against the orks has been won, and the fighting heroes have returned home",
+      "detailed_description": "",
+      "exits": [
+        {
+          "direction": "north",
+          "room_id": 1,
+          "exit_type": "door"
+        },
+        {
+          "direction": "south",
+          "room_id": 2,
+          "exit_type": "door"
+        },
+        {
+          "direction": "west",
+          "room_id": 3,
+          "exit_type": "gate"
+        },
+        {
+          "direction": "east",
+          "room_id": 4,
+          "exit_type": "gate"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Your house",
+      "description": "Your house overlooks the Lamb and Lion pub, which makes it easy to stumble home when drunk.",
+      "detailed_description": "",
+      "exits": [
+        {
+          "direction": "south",
+          "room_id": 0,
+          "exit_type": "door"
+        },
+        {
+          "direction": "west",
+          "room_id": 6,
+          "exit_type": "gate"
+        },
+        {
+          "direction": "east",
+          "room_id": 7,
+          "exit_type": "gate"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "A shady alley",
+      "description": "The alley is dark with a peculiar mist making it hard to see the other side. You can hear someone whistling poorly.",
+      "detailed_description": "",
+      "exits": [
+        {
+          "direction": "north",
+          "room_id": 0,
+          "exit_type": "door"
+        },
+        {
+          "direction": "south",
+          "room_id": 5,
+          "exit_type": "door"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The castle",
+      "description": "The castle was built hundreds of years ago when the city was much richer than it is now.",
+      "detailed_description": "",
+      "exits": [
+        {
+          "direction": "north",
+          "room_id": 6,
+          "exit_type": "gate",
+          "lock": {
+            "locked": true,
+            "unlock_conditions": [
+              {
+                "type": "seen",
+                "value": {
+                  "room": 7
+                },
+                "quantity": 1
+              },
+              {
+                "type": "consumed",
+                "value": {
+                  "drink": "beer"
+                },
+                "quantity": 10
+              }
+            ]
+          }
+        },
+        {
+          "direction": "east",
+          "room_id": 0,
+          "exit_type": "gate"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "The city walls",
+      "description": "The city walls are eight metres high and two thick, and have kept invaders out for centuries.",
+      "detailed_description": "",
+      "exits": [
+        {
+          "direction": "north",
+          "room_id": 7,
+          "exit_type": "gate"
+        },
+        {
+          "direction": "west",
+          "room_id": 0,
+          "exit_type": "gate"
+        },
+        {
+          "direction": "up",
+          "room_id": 4,
+          "exit_type": "other",
+          "notifications": [
+            {
+              "variant": "error",
+              "message": "Unable to climb up. It's way to high."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "A misty alley",
+      "description": "A dangerous-looking man stands before you holding a small dagger. \"Come any closer and I kill yer!\"",
+      "detailed_description": "",
+      "exits": [
+        {
+          "direction": "north",
+          "room_id": 2,
+          "exit_type": "door"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "The stables",
+      "description": "The stables are full of sleeping horses, but at least it is nice and warm in here.",
+      "detailed_description": "",
+      "exits": [
+        {
+          "direction": "south",
+          "room_id": 3,
+          "exit_type": "gate"
+        },
+        {
+          "direction": "east",
+          "room_id": 1,
+          "exit_type": "door"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "The gardens",
+      "description": "The gardens are peaceful and surprisingly of flowers for this time of year.",
+      "detailed_description": "",
+      "exits": [
+        {
+          "direction": "north",
+          "room_id": 8,
+          "exit_type": "door"
+        },
+        {
+          "direction": "south",
+          "room_id": 4,
+          "exit_type": "gate"
+        },
+        {
+          "direction": "west",
+          "room_id": 1,
+          "exit_type": "door"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "The hallway",
+      "description": "A once clinical and clean white environment. But now there is blood everywhere.",
+      "detailed_description": "A long hallway leading up to a door, but this once pristine white and clinically clean environment is not safe anymore. Blood and gore everywhere you can look.",
+      "exits": [
+        {
+          "direction": "south",
+          "room_id": 7,
+          "exit_type": "door"
+        },
+        {
+          "direction": "west",
+          "room_id": 9,
+          "exit_type": "door"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "The laboratory",
+      "description": "A very clinical and clean white environment. No blood here. Strange.",
+      "detailed_description": "You can smell the detergent that has been used to clean this laboratory. It has never been this clean before.",
+      "exits": [
+        {
+          "direction": "east",
+          "room_id": 8,
+          "exit_type": "door"
+        }
+      ]
+    }
+  ]
+}

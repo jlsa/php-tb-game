@@ -17,7 +17,7 @@ class RoomExit implements UsableInterface, DescribeInterface
         private readonly Room $from,
         private readonly Room $to,
         private readonly DirectionEnum $direction,
-        private readonly RoomExitType $exitType = RoomExitType::Door
+        private readonly RoomExitType $exitType
     ) {
     }
 
@@ -26,7 +26,7 @@ class RoomExit implements UsableInterface, DescribeInterface
         return 'Using door exit ...';
     }
 
-    function getDetailedDescription(): string
+    public function getDetailedDescription(): string
     {
         return \sprintf(
             ' %s %s %s %s',
@@ -37,8 +37,13 @@ class RoomExit implements UsableInterface, DescribeInterface
         );
     }
 
-    function getDescription(): string
+    public function getDescription(): string
     {
         return ' ' . $this->direction->value . ' ' . $this->to->name . PHP_EOL;
+    }
+
+    public function lookBack(): string
+    {
+        return 'You come from ' . $this->from->name;
     }
 }

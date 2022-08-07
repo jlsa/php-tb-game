@@ -82,22 +82,9 @@ class Room implements DescribeInterface
         return $this;
     }
 
-    /**
-     * @param array<DirectionEnum, Room> $rooms
-     */
-    public function addExits(array $rooms): static
-    {
-        foreach ($rooms as $direction => $room) {
-            $this->addExit($room, DirectionEnum::from($direction));
-        }
-
-        return $this;
-    }
-
     public function addExit(Room $to, DirectionEnum $direction, ?RoomExitType $exitType = null): static
     {
-        $this->exits[] = new RoomExit($this, $to, $direction, $exitType);
-//        $to->addExit($this, $direction->getOpposite());
+        $this->exits[] = new RoomExit($this, $to, $direction, $exitType ?? RoomExitType::Door);
 
         return $this;
     }

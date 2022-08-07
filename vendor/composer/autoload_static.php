@@ -12,6 +12,7 @@ class ComposerStaticInit5e43d8c53ba3ae1379c16d19b8b3a8b4
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '9b38cf48e83f5d8f60375221cd213eee' => __DIR__ . '/..' . '/phpstan/phpstan/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -76,6 +77,7 @@ class ComposerStaticInit5e43d8c53ba3ae1379c16d19b8b3a8b4
 
     public static $classMap = array (
         'App\\App' => __DIR__ . '/../..' . '/App/App.php',
+        'App\\Enums\\DirectionEnum' => __DIR__ . '/../..' . '/App/Enums/DirectionEnum.php',
         'App\\Interfaces\\DescribeInterface' => __DIR__ . '/../..' . '/App/Interfaces/DescribeInterface.php',
         'App\\Interfaces\\UsableInterface' => __DIR__ . '/../..' . '/App/Interfaces/UsableInterface.php',
         'App\\Traits\\DescribeTrait' => __DIR__ . '/../..' . '/App/Traits/DescribeTrait.php',
@@ -83,6 +85,7 @@ class ComposerStaticInit5e43d8c53ba3ae1379c16d19b8b3a8b4
         'App\\World\\Item\\Item' => __DIR__ . '/../..' . '/App/World/Item/Item.php',
         'App\\World\\Room\\Room' => __DIR__ . '/../..' . '/App/World/Room/Room.php',
         'App\\World\\Room\\RoomExit' => __DIR__ . '/../..' . '/App/World/Room/RoomExit.php',
+        'App\\World\\Room\\RoomExitType' => __DIR__ . '/../..' . '/App/World/Room/RoomExitType.php',
         'App\\World\\World' => __DIR__ . '/../..' . '/App/World/World.php',
         'App\\World\\WorldBuilder' => __DIR__ . '/../..' . '/App/World/WorldBuilder.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',

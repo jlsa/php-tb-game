@@ -12,11 +12,11 @@ class Item implements UsableInterface, DescribeInterface
     use UsableTrait;
     use DescribeTrait;
 
-    private string $detailedDescription;
-    private string $description;
-
-    public function __construct(public readonly string $name)
-    {
+    public function __construct(
+        public readonly string $name,
+        private readonly string $description,
+        private readonly string $detailedDescription,
+    ) {
     }
 
     public function getDetailedDescription(): string

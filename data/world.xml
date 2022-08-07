@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <world>
     <room>
         <id>0</id>
@@ -114,7 +115,6 @@
         <exit>
             <direction>north</direction>
             <roomId>2</roomId>
-            <exitType>door</exitType>
             <exitType>door</exitType>
         </exit>
     </room>

@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\App' => $baseDir . '/App/App.php',
+    'App\\Enums\\DirectionEnum' => $baseDir . '/App/Enums/DirectionEnum.php',
     'App\\Interfaces\\DescribeInterface' => $baseDir . '/App/Interfaces/DescribeInterface.php',
     'App\\Interfaces\\UsableInterface' => $baseDir . '/App/Interfaces/UsableInterface.php',
     'App\\Traits\\DescribeTrait' => $baseDir . '/App/Traits/DescribeTrait.php',
@@ -14,6 +15,7 @@ return array(
     'App\\World\\Item\\Item' => $baseDir . '/App/World/Item/Item.php',
     'App\\World\\Room\\Room' => $baseDir . '/App/World/Room/Room.php',
     'App\\World\\Room\\RoomExit' => $baseDir . '/App/World/Room/RoomExit.php',
+    'App\\World\\Room\\RoomExitType' => $baseDir . '/App/World/Room/RoomExitType.php',
     'App\\World\\World' => $baseDir . '/App/World/World.php',
     'App\\World\\WorldBuilder' => $baseDir . '/App/World/WorldBuilder.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
