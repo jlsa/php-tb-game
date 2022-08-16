@@ -20,8 +20,8 @@ class WorldBuilder
         $json = \file_get_contents(filename: $filename);
         if (!$json) {
             throw new \Exception(message: \sprintf(
-                format: 'Unable to properly load the world file: %s',
-                values: $filename
+                'Unable to properly load the world file: %s',
+                $filename
             ));
         }
         $data = (array)json_decode(json: $json, associative: true, flags: JSON_OBJECT_AS_ARRAY);
