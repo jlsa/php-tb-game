@@ -10,7 +10,8 @@ class App
 {
     public function __construct()
     {
-        (new WorldGenerator())->render();
+//        (new WorldGenerator())->render();
+        (new WorldGenerator())->generateMaze();
     }
 
     public function start(): void
